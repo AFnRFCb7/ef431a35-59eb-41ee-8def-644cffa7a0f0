@@ -15,7 +15,6 @@
                                         in
                                             with identified ;
                                                 {
-                                                    config.environment.sessionVariables.TEMPORARY = config.nodejs.fetchers.bcrypt ;
                                                     options.nodejs =
                                                         {
                                                             fetchers.bcrypt =
