@@ -15,7 +15,7 @@
                                         in
                                             with identified ;
                                                 {
-                                                    config.environment.sessionVariables.FETCH_BCRYPT= "bcrypt = ^5.1.1" ;
+                                                    config.environment.sessionVariables.TEMPORARY = config.nodejs.fetchers.bcrypt ;
                                                     options.nodejs =
                                                         {
                                                             fetchers.bcrypt =
@@ -27,7 +27,7 @@
                                                             fetchers.package =
                                                                 lib.mkOption
                                                                     {
-                                                                        default = config.nodejs.package { name = "bcrypt" ; nodejs = pkgs.nodejs_22 ; version-spec = "^5.1.1" ; } ;
+                                                                        default = config.nodejs.package { exploded = ./node_modules.exploded ; } ;
                                                                         type = lib.types.package ;
                                                                     } ;
                                                         } ;
