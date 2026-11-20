@@ -24,7 +24,7 @@
                                                                         default = config.nodejs.fetch { name = "bcrypt" ; nodejs = pkgs.nodejs_22 ; version-spec = "%5.1.1" ; } ;
                                                                         type = lib.types.package ;
                                                                     } ;
-                                                            fetchers.package =
+                                                            packages.bcrypt =
                                                                 lib.mkOption
                                                                     {
                                                                         default = config.nodejs.package { exploded = ./node_modules.exploded ; } ;
