@@ -46,7 +46,7 @@
                                 {
                                     check = null ;
                                     checks = [ ] ;
-                                    implementation = output implementation
+                                    implementation = output implementation ;
                                     imports = [ ] ;
                                 } ;
             } ;
